@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f5ede0;
+  font-family: 'Georgia', serif;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #efe3d0; }
+::-webkit-scrollbar-thumb { background: #c8a870; border-radius: 3px; }
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 8px #d9770655; }
+  50%       { box-shadow: 0 0 22px #f59e0baa; }
+}
+@keyframes safe-pulse {
+  0%, 100% { box-shadow: inset 0 0 0 #4caf5000; }
+  50%       { box-shadow: inset 0 0 10px #4caf5044; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.cell { transition: all 0.3s ease; }
+.cell:hover { filter: brightness(1.06); cursor: default; }
+.log-entry { animation: fadeIn 0.25s ease; }

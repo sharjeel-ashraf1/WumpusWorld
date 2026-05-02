@@ -6,7 +6,7 @@ import Percepts from './components/Percepts'
 import LogPanel from './components/LogPanel'
 import StatsBar from './components/StatsBar'
 
-const API = '/api'
+const API = 'https://wumpusworld-production.up.railway.app/api'
 
 export default function App() {
   const [sessionId, setSessionId]     = useState(null)

@@ -6,7 +6,7 @@ import Percepts from './components/Percepts'
 import LogPanel from './components/LogPanel'
 import StatsBar from './components/StatsBar'
 
-const API = 'http://127.0.0.1:5000/api'
+const API = '/api'
 
 export default function App() {
   const [sessionId, setSessionId]     = useState(null)

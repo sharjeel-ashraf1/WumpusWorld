@@ -178,8 +178,8 @@ def ask_cell():
     danger, s2 = kb.is_dangerous(r, c)
 
     # Collect traces for the response
-    from logic import Literal
-    from logic import resolution_refutation, make_clause
+    from Logic import Literal
+    from Logic import resolution_refutation, make_clause
 
     pit_result    = kb.ask(Literal(f"P_{r}_{c}"),   record_trace=True)
     wumpus_result = kb.ask(Literal(f"W_{r}_{c}"),   record_trace=True)
